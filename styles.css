@@ -35,52 +35,74 @@ body.dark {
   --secondaryColor: #fff;
 }
 
+h1 {
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 4.2rem;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 3rem;
+  color: var(--customColor);
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+h4 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
 .container {
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 30px;
-  max-width: 900px;
+  padding: 2rem;
 }
 
-.fh {
+.d-flex {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
 }
 
-.fv {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.section {
+  overflow-x: hidden;
+  padding-top: 8rem;
 }
 
-.resume {
-  margin: 50px auto;
-  border: 1px solid #f5f5f5;
-  box-shadow: 1px 1px 7px 7px #f5f5f5;
-  padding: 30px 0;
-  max-width: 900px;
-}
-
-.resume__block {
-  border-bottom: 3px solid var(--border-color);
-  padding-bottom: 30px;
-  margin-bottom: 15px;
-}
-
-@media screen and (max-width: 576px) {
-  .main-info,
-  .contact_info_container {
-    flex-direction: column;
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 4.5rem;
   }
-
-  .contact_info_container {
-    align-items: center;
+  h2 {
+    font-size: 2.5rem;
   }
-
-  .contact-info__block:not(:last-child) {
-    margin-bottom: 20px;
+  h3 {
+    font-size: 2rem;
   }
-
+  .section {
+    padding-top: 5rem;
+  }
   .experiences {
     margin-right: 0;
   }
