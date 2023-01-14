@@ -878,3 +878,18 @@ img {
     line-height: 5rem;
   }
 }
+
+footer {
+  padding: 2rem 0;
+  background-color: #222;
+}
+
+footer p {
+  font-size: 1.8rem;
+  color: #b1b1b1;
+  text-align: center;
+}
+
+footer p span {
+  color: var(--customColor);
+}
