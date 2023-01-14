@@ -1,242 +1,364 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Résumé</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Resume, personal website, web developer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Resume</title>
   </head>
   <body>
     <!-- Header -->
     <header class="header" id="header">
-      <div class="navigation">
-        <div class="nav-center container d-flex">
-          <div class="logo">
-            <h2>L<span>Ira</span></h2>
-          </div>
-          <ul class="nav-list d-flex">
-            <li class="nav-item">
-              <a href="#header" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#skills" class="nav-link">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a href="#timeline" class="nav-link">Timeline</a>
-            </li>
-            <li class="nav-item">
-              <a href="#portfolio" class="nav-link">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item theme-icon">
+        <div class="navigation">
+          <div class="nav-center container d-flex">
+            <div class="logo">
+              <h2>L<span>Ira</span></h2>
+            </div>
+            <ul class="nav-list d-flex">
+              <li class="nav-item">
+                <a href="#header" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="nav-link">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="#timeline" class="nav-link">Timeline</a>
+              </li>
+              <li class="nav-item">
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item theme-icon">
+                <i class="fas fa-moon"></i>
+              </li>
+            </ul>
+            <div class="theme theme-icon">
               <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+        <div class="hero d-flex">
+          <div class="left">
+            <div class="offer d-flex">
+              <h2>Hi &#128400;! My name is</h2>
+              <br />
+              <h1><span>Ludanova Irina</span></h1>
+            </div>
+            <div class="wrapper d-flex">
+              <div class="static-txt">I'm a</div>
+              <ul class="dynamic-txts">
+                <li><span>Designer</span></li>
+                <li><span>Developer</span></li>
+                <li><span>Freelancer</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="right">
+            <div class="img-box">
+              <img src="./assets/photo1.webp" alt="Header photo" />
+            </div>
+          </div>
+        </div>
+        <!-- color control -->
+        <div class="control">
+          <div class="widget">
+            <i class="fas fa-cog"></i>
+          </div>
+          <div class="colors">
+            <span data-id="#0044FF"></span>
+            <span data-id="#FF4600"></span>
+            <span data-id="#CE00FF"></span>
+            <span data-id="#03FFC7"></span>
+          </div>
+        </div>
+      </header>
+      <!-- About Section -->
+      <main>
+        <section class="section about" id="about">
+          <div class="title">
+            <h2>About</h2>
+          </div>
+          <div class="container d-flex about-center">
+            <div class="left">
+              <div class="img-box">
+                <img src="./assets/photo2.webp" alt="Main photo" />
+              </div>
+            </div>
+            <div class="right">
+              <h2>I'm Ludanova Irina</h2>
+              <h3>Web Developer</h3>
+              <p>
+                I am a Front End Developer. I would be happy to join the project
+                team to apply my skills and benefit the project.<br />
+                I am well versed in creating an application on React and Vue Js,
+                adaptive cross-browser layout of landing pages and applications. I
+                develop an application from scratch to deployment, taking into
+                account modern design trends and technological solutions.<br />
+                I have experience with Express JS , Redux Toolkit , Vuex, Laravel,
+                Typescript, Ant Design etc, using Git. <br />
+                I can effectively find answers to working questions, work in a
+                team. I take criticism constructively and constantly develop my
+                skills. <br />
+                See examples of my code on my Github or Bitbucket profile.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Skills Section -->
+        <section class="section skills" id="skills">
+          <div class="title">
+            <h2>Skills</h2>
+          </div>
+          <div class="skills-center container d-flex">
+            <div class="left">
+              <div class="skill-card">
+                <h3>Web Designer</h3>
+                <div class="cards d-flex">
+                  <div class="card">PhotoShop</div>
+                  <div class="card">Cinema 4D</div>
+                  <div class="card">Figma</div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <h3>Web Developer</h3>
+                <div class="cards d-flex">
+                  <div class="card">HTML</div>
+                  <div class="card">CSS</div>
+                  <div class="card">JAVASCRIPT</div>
+                  <div class="card">REACT JS</div>
+                  <div class="card">REDUX</div>
+                  <div class="card">TYPESCRIPT</div>
+                  <div class="card">NEXT JS</div>
+                  <div class="card">VUE JS</div>
+                  <div class="card">VUEX</div>
+                  <div class="card">LARAVEL</div>
+                  <div class="card">NODE JS</div>
+                  <div class="card">EXPRESS JS</div>
+                  <div class="card">SOCKET IO</div>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <img src="./assets/skills.webp" alt="Web" />
+            </div>
+          </div>
+        </section>
+    <!-- Timeline -->
+    <section class="section" id="timeline">
+        <div class="title">
+          <h2>Timeline</h2>
+        </div>
+        <div class="container d-flex timeline-center">
+          <ul class="timeline">
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">
+                  May 2022 - August 2022
+                </p>
+                <h4>Hathor Productions</h4>
+                <p>
+                  Developer (NDA)
+                </p>
+              </div>
+            </li>
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">
+                  February 2022 - April 2022
+                </p>
+                <h4>Academ Web Solution</h4>
+                <p>
+                  Develop an application for a learning platform. In the course
+                  of work, the main pages of the application, connection to the
+                  api, search functionality, sorting, routing, toggle are
+                  implemented
+                </p>
+              </div>
+            </li>
+            </li>
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">
+                  December 2021 - January 2022
+                </p>
+                <h4>Binary Studio Academy</h4>
+                <p>
+                  Systematization of knowledge, good pumping of skills and
+                  gaining new experience in extreme conditions. Work on various
+                  projects (browser JS game, online game on Socket IO, online
+                  chat on React-Redux Toolkit)
+                </p>
+              </div>
+            </li>
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">October 2021 - Until now</p>
+                <h3>FrontEnd Developer</h3>
+                <h4>Restart-A</h4>
+                <p>
+                  Design, development and promotion of sites and applications,
+                  redesign of existing resources.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">
+                  October 2020 - October 2021
+                </p>
+                <h3>Professional education</h3>
+                <h4>SkillFactory</h4>
+                <p>Fullstack Python developer courses</p>
+              </div>
+            </li>
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">May 2020- March 2021</p>
+                <h3>FrontEnd Developer</h3>
+                <h4>Freelance</h4>
+                <p>
+                  Work on various projects of landing pages, applications.
+                  Including, the development of a site for the karate club
+                  "Dojo" (design, layout, content, connection of the admin panel
+                  on Wordpress). Working on a SPA project in React using hooks,
+                  forms, lazy load.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">February 2020- May 2020</p>
+                <h3>Professional education</h3>
+                <h4>Way Up</h4>
+                <p>Web Design Courses</p>
+              </div>
+            </li>
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">
+                  August 2005- December 2019
+                </p>
+                <h3>Businessman</h3>
+                <h4>"Ethnic"</h4>
+                <p>
+                  Creation and promotion of your own company for the production
+                  of stage costumes, including under government orders
+                </p>
+              </div>
             </li>
           </ul>
-
-          <div class="theme theme-icon">
-            <i class="fas fa-moon"></i>
+        </div>
+      </section>
+      <!-- Portfolio -->
+    <section class="section portfolio" id="portfolio">
+        <div class="title">
+          <h2>Portfolio</h2>
+        </div>
+        <div class="container portfolio-center">
+          <div class="card">
+            <img src="./assets/photo8.webp" alt="Preview1" />
+            <div class="card__head">Dojo karate club</div>
           </div>
-          <div class="hamburger">
-            <i class="fas fa-bars"></i>
+          <div class="card">
+            <img src="./assets/photo4.webp" alt="Preview2" />
+            <div class="card__head">Webinar landing page</div>
+          </div>
+          <div class="card">
+            <img src="./assets/photo5.webp" alt="Preview3" />
+            <div class="card__head">Online marathon landing</div>
+          </div>
+          <div class="card">
+            <img src="./assets/photo6.webp" alt="Preview4" />
+            <div class="card__head">Hoverboards</div>
+          </div>
+          <div class="card">
+            <img src="./assets/photo7.webp" alt="Preview5" />
+            <div class="card__head">Glazing landing</div>
           </div>
         </div>
+      </section>
+<!-- Contact -->
+<section class="section contact" id="contact">
+    <div class="title">
+      <h2>Contact</h2>
+      <h3>You can contact me in any of these ways:</h3>
+    </div>
+    <div class="contact-center container d-flex">
+        <ul>
+          <li>
+            <a href="http://restart-a.com">
+              <i class="fas fa-home" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/irina-ludanova/">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:ludanova.dev@gmail.com">
+              <i class="far fa-envelope" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/irynaludanova">
+              <i class="fab fa-github-square" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/ludanova_irina">
+              <i class="fab fa-telegram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="viber://add&number=380980438385">
+              <i class="fab fa-viber" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
       </div>
-
-      <div class="hero d-flex">
-        <div class="left">
-          <div class="offer d-flex">
-            <h2>Hi &#128400;! My name is</h2>
-            <br />
-            <h1><span>Ludanova Irina</span></h1>
-          </div>
-          <div class="wrapper d-flex">
-            <div class="static-txt">I'm a</div>
-            <ul class="dynamic-txts">
-              <li><span>Designer</span></li>
-              <li><span>Developer</span></li>
-              <li><span>Freelancer</span></li>
-            </ul>
-          </div>
-        </div>
-        <div class="right">
-          <div class="img-box">
-            <img src="./assets/photo.webp" alt="Header photo" />
-          </div>
-        </div>
-      </div>
-      <!-- color control -->
-      <div class="control">
-        <div class="widget">
-          <i class="fas fa-cog"></i>
-        </div>
-        <div class="colors">
-          <span data-id="#0044FF"></span>
-          <span data-id="#FF4600"></span>
-          <span data-id="#CE00FF"></span>
-          <span data-id="#03FFC7"></span>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="resume">
-        <div class="container">
-          <div class="resume__block">
-            <h1 class="contact-info__header">Bulka</h1>
-            <h3 class="contact-info__sub-header">Senior Hooman Manager</h3>
-
-            <div class="contact_info_container fh">
-              <div class="contact-info__block">
-                <a href="" rel="author" class="contact-info__item">
-                  <div class="contact-info__item-icon-wrapper">
-                    <svg
-                      class="contact-info__item-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 384 512"
-                    >
-                      <path
-                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span>Lviv, Ukraine</span>
-                </a>
-              </div>
-
-              <div class="contact-info__block contact-info__block--center">
-                <img
-                  class="contact-info__avatar"
-                  src="assets/avatar.jpg"
-                  alt="Avatar"
-                />
-              </div>
-
-              <div class="contact-info__block">
-                <a
-                  href="https://ua.linkedin.com/company/binary-studio_241166"
-                  rel="author"
-                  class="contact-info__item"
-                >
-                  <div class="contact-info__item-icon-wrapper">
-                    <svg
-                      class="contact-info__item-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512"
-                    >
-                      <path
-                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span>binary-studio</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="resume__block">
-            <div class="intro">
-              <div class="intro__icon-wrapper">
-                <svg
-                  class="intro__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
-                  ></path>
-                </svg>
-              </div>
-              <p class="intro_text">
-                Meow. I am a Binary Studio cat. Still got 7 lives. Work in IT,
-                Full Stack Evil, all I do is sleep and try to help out hoomans
-                with their projects whenever they need me.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="resume__block">
-            <div class="skills">
-              <h3 class="skills__header">Skills</h3>
-              <p class="skills__text">
-                Sleep, eat, more sleep, meow, mrrr, purr.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="resume__block">
-            <div class="main-info fh">
-              <div class="experiences">
-                <h3 class="experiences__header">Experience</h3>
-                <div class="experiences__company">
-                  <div class="experiences__company-header">
-                    <span class="experiences__company-header-durability"
-                      >For whole my life</span
-                    >
-                    <h3 class="experiences__company-header-name">
-                      BinaryStudio
-                    </h3>
-                  </div>
-
-                  <div class="experiences__company-project">
-                    <span class="experiences__company-project-role"
-                      >Binary Studio Cat</span
-                    >
-                    <h3 class="experiences__company-project-name">
-                      Hooman project
-                    </h3>
-                    <ul class="experiences__company-project-responsibilities">
-                      <li>Supported hoomans</li>
-                      <li>Slept all the time</li>
-                      <li>Lied on the keyboard</li>
-                      <li>Watched my hoomans working</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="additional-info fv">
-                <div class="additional-info__education">
-                  <h3 class="additional-info__education-header">Education</h3>
-                  <div class="additional-info__education-university">
-                    <span
-                      class="additional-info__education-university-durability"
-                      >2021</span
-                    >
-                    <h3
-                      class="additional-info__education-university-speciality"
-                    >
-                      Cat track
-                    </h3>
-                    <p class="additional-info__education-university-name">
-                      Binary Studio Academy
-                    </p>
-                  </div>
-                </div>
-
-                <div class="additional-info__languages">
-                  <h3 class="additional-info__languages-header">Languages</h3>
-                  <p class="additional-info__languages-item">Meow dialect</p>
-                  <p class="additional-info__languages-item">
-                    Ukrainian (understand)
-                  </p>
-                  <p class="additional-info__languages-item">
-                    English (don't understand)
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
+  </section>
+  </main>
+   <!-- Footer -->
+   <footer>
+    <p id="date"></p>
+    <script type="text/javascript">
+      let year = new Date().getFullYear()
+      document.getElementById("date").innerHTML =
+        "Copyright &copy; " + year + " Ludanova"
+    </script>
+  </footer>
     <script src="./index.js"></script>
   </body>
 </html>
